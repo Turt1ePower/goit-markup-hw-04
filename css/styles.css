@@ -34,6 +34,11 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 /* ---------UTILITY--------- */
 
 body {
@@ -49,11 +54,13 @@ body {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+
   /* outline: 1px solid tomato; */
 }
 
 .section {
-  padding: 94px 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .link {
@@ -69,9 +76,10 @@ body {
 }
 
 .btn {
+  border: none;
+
   font-family: inherit;
   background-color: transparent;
-  border: none;
   cursor: pointer;
 }
 
@@ -154,7 +162,8 @@ body {
 
 .nav-item a {
   display: block;
-  padding: 32px 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* CONTACTS */
@@ -186,34 +195,41 @@ body {
 /* HERO */
 
 .hero {
-  background-color: var(--primary-background-color);
-  padding: 200px 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   text-align: center;
+
+  background-color: var(--primary-background-color);
 }
 
 .hero-title {
+  max-width: 696px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
   color: var(--secondary-color);
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 30px;
-  max-width: 696px;
 }
 
 .hero-button {
-  background-color: var(--accent-color);
-  color: var(--secondary-color);
+  padding: 10px 32px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding: 10px 32px;
 }
 
 .hero-button:hover,
@@ -224,7 +240,8 @@ body {
 /* FEATURES */
 
 .features {
-  padding: 94px 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .features-list {
@@ -240,12 +257,12 @@ body {
 }
 
 .features-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-
-  margin-bottom: 10px;
 }
 
 /* OUR WORKS */
@@ -271,10 +288,6 @@ body {
 }
 .works-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.works-img {
-  display: block;
 }
 
 /* OUR TEAM */
@@ -313,7 +326,6 @@ body {
 }
 
 .teammate-photo {
-  display: block;
   margin-bottom: 30px;
 }
 
@@ -349,18 +361,25 @@ body {
 }
 
 .filter-button {
-  padding: 6px 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
 
-  background-color: var(--secondary-background-color);
-  border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
 }
 
 .filter-button:hover,
 .filter-button:focus {
-  padding: 6 25px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 25px;
+  padding-right: 25px;
 
   background-color: var(--accent-color);
   color: var(--secondary-color);
@@ -389,12 +408,11 @@ body {
   margin-bottom: 30px;
 }
 
-.card-photo {
-  display: block;
-}
-
 .card-info {
-  padding: 20px 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 
   border-left: 1px solid var(--border-card-color);
   border-bottom: 1px solid var(--border-card-color);
@@ -423,11 +441,19 @@ body {
   color: inherit;
 }
 
+.card:hover,
+.card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 /* ---------FOOTER--------- */
 
 .page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--primary-background-color);
-  padding: 60px 0;
 }
 
 /* ADDRESS */
