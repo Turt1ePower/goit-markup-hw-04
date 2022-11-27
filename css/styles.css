@@ -416,6 +416,17 @@ body {
   fill: var(--secondary-color);
 }
 
+/* НАШИ КЛИЕНТЫ */
+
+.clients-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
 /* PORTFOLIO */
 
 /* PORTFOLIO FILTER */
