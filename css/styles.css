@@ -11,6 +11,7 @@
   --border-header-color: #ececec;
   --border-card-color: #eeeeee;
   --hero-gradient-color: rgba(47, 48, 58, 0.4);
+  --icon-color: #afb1b8;
 }
 
 /* Reset */
@@ -341,6 +342,7 @@ body {
 
 .teammate-card {
   min-width: 270px;
+  padding-bottom: 30px;
 
   background-color: var(--secondary-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -366,11 +368,52 @@ body {
 }
 
 .teammate-position {
-  padding-bottom: 30px;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+.soc-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.soc-item {
+  width: 44px;
+  height: 44px;
+}
+
+.soc-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.soc-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+}
+
+.soc-icon {
+  fill: var(--icon-color);
+}
+
+.soc-link:hover,
+.soc-link:focus {
+  background-color: var(--accent-color);
+}
+
+.soc-link:hover .soc-icon,
+.soc-link:focus .soc-icon {
+  fill: var(--secondary-color);
 }
 
 /* PORTFOLIO */
