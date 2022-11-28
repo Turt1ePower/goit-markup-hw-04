@@ -612,6 +612,7 @@ body {
 
 .page-footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-contacts {
@@ -648,8 +649,6 @@ body {
 }
 
 /* Соцсети футер */
-.footer-soc-links {
-}
 
 .footer-soc-title {
   margin-bottom: 20px;
