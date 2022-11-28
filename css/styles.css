@@ -45,7 +45,7 @@ img {
 /* ---------UTILITY--------- */
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -117,7 +117,7 @@ body {
 /* LOGO */
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
 
@@ -181,8 +181,16 @@ body {
   margin-left: auto;
 }
 
+.header-contact-item {
+}
+
 .header-contact-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.header-contact {
+  display: flex;
+  align-items: center;
 }
 
 .header-contact:link,
@@ -197,6 +205,17 @@ body {
 .header-contact:hover,
 .header-contact:focus {
   color: var(--accent-color);
+}
+
+.contact-icon {
+  margin-right: 10px;
+
+  fill: var(--primary-color);
+}
+
+.header-contact:hover .contact-icon,
+.header-contact:focus .contact-icon {
+  fill: var(--accent-color);
 }
 
 /* ---------SECTIONS--------- */
@@ -215,7 +234,7 @@ body {
       var(--hero-gradient-color),
       var(--hero-gradient-color)
     ),
-    url('../images/hero_bg.jpg');
+    url("../images/hero_bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -282,6 +301,21 @@ body {
 
 .features-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.features-icon-item {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  height: 120px;
+
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
+}
+
+.features-icon {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .features-title {
