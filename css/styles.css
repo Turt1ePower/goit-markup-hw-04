@@ -12,6 +12,7 @@
   --border-card-color: #eeeeee;
   --hero-gradient-color: rgba(47, 48, 58, 0.4);
   --icon-color: #afb1b8;
+  --footer-soc-bg: rgba(255, 255, 255, 0.1);
 }
 
 /* Reset */
@@ -45,7 +46,7 @@ img {
 /* ---------UTILITY--------- */
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -117,7 +118,7 @@ body {
 /* LOGO */
 
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.19;
 
@@ -234,7 +235,7 @@ body {
       var(--hero-gradient-color),
       var(--hero-gradient-color)
     ),
-    url("../images/hero_bg.jpg");
+    url('../images/hero_bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -461,6 +462,42 @@ body {
   text-align: center;
 }
 
+.clients-list {
+  display: flex;
+}
+
+.clients-item {
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 32px;
+  padding-left: 32px;
+
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  display: flex;
+}
+
+.client-icon {
+  fill: var(--icon-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.clients-link:hover .client-icon,
+.clients-link:focus .client-icon {
+  fill: var(--accent-color);
+}
+
 /* PORTFOLIO */
 
 /* PORTFOLIO FILTER */
@@ -573,6 +610,14 @@ body {
 
 /* ADDRESS */
 
+.page-footer .container {
+  display: flex;
+}
+
+.footer-contacts {
+  margin-right: 70px;
+}
+
 .page-footer .logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -600,4 +645,32 @@ body {
 
 .footer-contact-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+/* Соцсети футер */
+.footer-soc-links {
+}
+
+.footer-soc-title {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-soc-links .soc-link {
+  background-color: var(--footer-soc-bg);
+}
+
+.footer-soc-links .soc-icon {
+  fill: var(--secondary-color);
+}
+
+.footer-soc-links .soc-link:hover,
+.footer-soc-links .soc-link:focus {
+  background-color: var(--accent-color);
 }
